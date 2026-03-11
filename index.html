@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GPA Calculator</title>
+</head>
+<body>
+
+<h2>GPA Calculator</h2>
+
+<table border="1">
+    <tr>
+        <th>Môn học</th>
+        <th>Điểm</th>
+        <th>Tín chỉ</th>
+    </tr>
+
+    <tr>
+        <td>Toán</td>
+        <td><input type="number" id="math" value="8"></td>
+        <td><input type="number" id="mathCredit" value="3"></td>
+    </tr>
+
+    <tr>
+        <td>Lý</td>
+        <td><input type="number" id="physics" value="7"></td>
+        <td><input type="number" id="physicsCredit" value="2"></td>
+    </tr>
+
+    <tr>
+        <td>Hóa</td>
+        <td><input type="number" id="chemistry" value="9"></td>
+        <td><input type="number" id="chemistryCredit" value="3"></td>
+    </tr>
+
+</table>
+
+<br>
+
+<button onclick="calculate()">Tính GPA</button>
+
+<h3>GPA: <span id="gpa"></span></h3>
+<h3>Xếp loại: <span id="rank"></span></h3>
+
+<script src="GPACalculator.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
